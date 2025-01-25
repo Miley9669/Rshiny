@@ -1,0 +1,7 @@
+# Ignore RStudio files
+.Rproj.user/
+.Rhistory
+
+# Ignore temporary files
+*.log
+*.tmp
