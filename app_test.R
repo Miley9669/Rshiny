@@ -1,5 +1,5 @@
 # app.R
-
+#Adding some text into the file for testing changes
 library(shiny)
 
 # UI ------------------------------------------------------------------------
@@ -59,6 +59,7 @@ server <- function(input, output, session) {
   
   # When the user clicks "Generate Excel Workbook"
   observeEvent(input$generateBtn, {
+    
     # 1) Create an empty workbook
     wb <- createWorkbookFunction()
     
@@ -98,6 +99,7 @@ server <- function(input, output, session) {
       # Save the workbook to the specified file
       openxlsx::saveWorkbook(wb, file = file, overwrite = TRUE)
     }
+    
   )
 }
 
