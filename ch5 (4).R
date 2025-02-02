@@ -12,7 +12,7 @@ ui <- fluidPage(
 )
 server <- function(input, output, session) {
   selected <- reactive({
-    browser()
+    #browser()
     subset(sales, TERRITORY %in% input$territory)
   })
   output$selected <- renderTable(head(selected(), 10))
